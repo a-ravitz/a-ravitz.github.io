@@ -1,0 +1,32 @@
+.my-text-color-1 {
+    color: #7cb386;
+}
+.my-text-color-2 {
+    color: #d7867b;
+}
+.my-text-color-3 {
+    color: #7177ad;
+}
+.my-text-color-4 {
+    color: #95c4ce;
+}
+.my-text-color-5 {
+    color: #e37fa1;
+}
+.my-bg-color-1 {
+    background-color: rgba(232,233,219,0.2);
+}
+.my-bg-color-2 {
+    background-color: #f7f7f7;
+}
+.btn {
+    border-color: #7cb386;
+}
+
+hr {
+    border-color: #95c4ce;
+}
+
+.card {
+    background-color: rgba(247,247,247);    
+}
