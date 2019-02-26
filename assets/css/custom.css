@@ -30,3 +30,27 @@ hr {
 .card {
     background-color: rgba(247,247,247);    
 }
+.card-body {
+    z-index: 1;
+}
+
+
+/* purple colors  */
+.t1 {
+    color: #301829;
+}
+.t2 {
+    color: #4e2784;
+}
+.t3 {
+    color: #5d3180;
+}
+.t4 {
+    color: #7c017c;
+}
+.t5 {
+    color: #9a00bf;
+}
+.t6 {
+    color: #b901f7;
+}
