@@ -11,7 +11,7 @@
 </head>
 <body>
         <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light my-bg-color-2">
+                <nav class="navbar navbar-expand-lg navbar-light ">
                   <a class="navbar-brand" href="#">
                     <h1 class="font-weight-light"><span class="my-text-color-1">A</span><span class="my-text-color-2">d</span><span class="my-text-color-3">a</span><span class="my-text-color-4">m</span> <span class="my-text-color-2">R</span><span class="my-text-color-1">a</span><span class="my-text-color-5">v</span><span class="my-text-color-4">i</span><span class="my-text-color-3">t</span><span class="my-text-color-2">z</span></h1>
                   </a>
@@ -21,14 +21,36 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item active ml-auto">
-                          <a class="nav-link" href="index.html"><h6 class="my-text-color-1">About</h6><span class="sr-only">(current)</span></a>
-                        </li>
+                          <a class="nav-link" href="index.html">
+                            <h6 class="my-text-color-1">About</h6>
+                          </a>
+                        </li>   
+                        <!-- <li class="nav-item ml-auto">
+                          <a class="nav-link" href="portfolio.html">
+                            <h6 class="my-text-color-2">Portfolio</h6><span class="sr-only">(current)</span>
+                          </a>
+                        </li> -->
                         <li class="nav-item ml-auto">
-                          <a class="nav-link" href="portfolio.html"><h6 class="my-text-color-2">Portfolio</h6></a>
+                          <a class="nav-link" href="contact.html">
+                            <h6 class="my-text-color-3">Contact</h6>
+                          </a>
                         </li>
-                        <li class="nav-item ml-auto">
-                          <a class="nav-link" href="contact.html"><h6 class="my-text-color-3">Contact</h6></a>
-                        </li>
+                        <li class="nav-item ml-auto dropdown">
+                          <div class="btn-group">
+                              <a href="portfolio.html" class="btn nav-link"><h6 class="my-text-color-2">Portfolio</h6></a>
+                              <a href="#" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropdown</span>
+                              </a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://a-ravitz.github.io/word-guess-game/">Word Guess Game</a>
+                                <a class="dropdown-item" href="https://a-ravitz.github.io/unit-4-game/index.html">Crystal Collector</a>
+                                <a class="dropdown-item" href="https://a-ravitz.github.io/trivia-game/index.html">Star Trek Trivia</a>
+                                <a class="dropdown-item" href="https://a-ravitz.github.io/gifTastic/">Simpsons Gif Search</a>
+                                <a class="dropdown-item" href="https://a-ravitz.github.io/TrainScheduler">Train Scheduler</a>
+                                <a class="dropdown-item" href="https://a-ravitz.github.io/drums">Keyboard Drums</a>
+                              </div>
+                          </div>
+                      </li>
                       </ul>
                     </div>
                   </nav>
@@ -36,7 +58,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="jumbotron my-bg-color-2">
+                    <div class="jumbotron bg-white">
                         <div class="h2">About Me</div>
                         <hr>
                         <img src="../bootstrap-portfolio/assets/images/pic with rumba.jpg" width="200" height="200" class="img-fluid float-left px-2" >
