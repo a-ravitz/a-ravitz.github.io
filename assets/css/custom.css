@@ -33,7 +33,6 @@ hr {
 .card-body {
     z-index: 1;
 }
-
 /* purple colors  */
 .t1 {
     color: #301829;
@@ -62,7 +61,6 @@ hr {
 /* .btn {
     border: none;
 } */
-
 .btn-group {
     border: none;
 }
@@ -75,3 +73,33 @@ body {
 .round {
     border-radius: 15%
 }
+/* .clock {
+    width: 5px;
+    height: 5px;
+    border: 1px solid #589c87;
+    border-radius: 50%;
+    position: relative;
+    padding: 10px;
+    box-shadow: 
+        0 0 0px 4px rgba(0,0,0,0.1)
+        inset 0 0 0 3px #efefef,
+        inset 0 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2)
+}
+.clock-face {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-3px)
+}
+.hand {
+    width: 50%;
+    height: 1px;
+    background: #589c87;
+    position: absolute;
+    right: 100%;
+    top: 10%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s; 
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.5, 1) */
