@@ -1,80 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/homework/bootstrap-portfolio/assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <title>Bootstrap Portfolio</title>
-</head>
-<body>
-        <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                  <a class="navbar-brand" href="#">
-                    <h1 class="font-weight-light"><span class="my-text-color-1">A</span><span class="my-text-color-2">d</span><span class="my-text-color-3">a</span><span class="my-text-color-4">m</span> <span class="my-text-color-2">R</span><span class="my-text-color-1">a</span><span class="my-text-color-5">v</span><span class="my-text-color-4">i</span><span class="my-text-color-3">t</span><span class="my-text-color-2">z</span></h1>
-                  </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active ml-auto">
-                          <a class="nav-link" href="index.html">
-                            <h6 class="my-text-color-1">About</h6>
-                          </a>
-                        </li>   
-                        <!-- <li class="nav-item ml-auto">
-                          <a class="nav-link" href="portfolio.html">
-                            <h6 class="my-text-color-2">Portfolio</h6><span class="sr-only">(current)</span>
-                          </a>
-                        </li> -->
-                        <li class="nav-item ml-auto">
-                          <a class="nav-link" href="contact.html">
-                            <h6 class="my-text-color-3">Contact</h6>
-                          </a>
-                        </li>
-                        <li class="nav-item ml-auto dropdown">
-                          <div class="btn-group">
-                              <a href="portfolio.html" class="btn nav-link"><h6 class="my-text-color-2">Portfolio</h6></a>
-                              <a href="#" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  <span class="sr-only">Toggle Dropdown</span>
-                              </a>
-                              <div class="dropdown-menu">
-                                <a class="dropdown-item" href="https://a-ravitz.github.io/word-guess-game/">Word Guess Game</a>
-                                <a class="dropdown-item" href="https://a-ravitz.github.io/unit-4-game/index.html">Crystal Collector</a>
-                                <a class="dropdown-item" href="https://a-ravitz.github.io/trivia-game/index.html">Star Trek Trivia</a>
-                                <a class="dropdown-item" href="https://a-ravitz.github.io/gifTastic/">Simpsons Gif Search</a>
-                                <a class="dropdown-item" href="https://a-ravitz.github.io/TrainScheduler">Train Scheduler</a>
-                                <a class="dropdown-item" href="https://a-ravitz.github.io/drums">Keyboard Drums</a>
-                              </div>
-                          </div>
-                      </li>
-                      </ul>
-                    </div>
-                  </nav>
-                </div> 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="jumbotron bg-white">
-                        <div class="h2">About Me</div>
-                        <hr>
-                        <img src="../bootstrap-portfolio/assets/images/pic with rumba.jpg" width="200" height="200" class="img-fluid float-left px-2" >
-                        <p>In 2005 I moved to Philadelphia to study music at University of The Arts. During my time in school, and since, I've have had the opportunity to play hundred's of shows in Philly, and in many great bands, but my most note worthy musical accomplishment has been touring with one of my grandpa's favorite bands, the Glenn Miller Orchestra.<p>
-                        <br>
-                        <p>When I stopped touring with the GMO in 2011, I began working in bars. I've had every job imaginable, from barbacking and cleaning up puke at SPTR, to managing the team, creating drinks, and bartending along side some of the city's best bartenders at Franklin Mortgage and Investment, Co. In 2016 I took another step deeper into the booze business by becoming a brand ambassador for Louisville Distilling, Co., representing Angel's Envy Bourbon. </p>
-                        <br>
-                        <p>Now, when i'm not working, playing bass, cooking, or riding my bike, i'm trying my hardest to wrap my head around coding for my PennLPS/Trilogy fullstack web development bootcamp classes!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-       
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="/homework/bootstrap-portfolio/assets/css/reset.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <title>Adam Ravitz</title>
+</head>
+
+<body>
+  <div class="container fixed-top">
+    <nav class="navbar navbar-expand-lg bg-white ">
+      <a class="navbar-brand slideSection" href="#">
+        <h1 class="font-weight-light"><span class="my-text-color-1">A</span><span class="my-text-color-2">d</span><span
+            class="my-text-color-3">a</span><span class="my-text-color-4">m</span> <span
+            class="my-text-color-2">R</span><span class="my-text-color-1">a</span><span
+            class="my-text-color-5">v</span><span class="my-text-color-4">i</span><span
+            class="my-text-color-3">t</span><span class="my-text-color-2">z</span></h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active ml-auto">
+            <a class="nav-link slideSection" href="#about">
+              <h6 class="my-text-color-1">About</h6>
+            </a>
+          </li>
+          <!-- dropdown menu for portfolio items -->
+          <li class="nav-item ml-auto">
+            <div class="btn-group">
+              <a class="nav-link slideSection" href="#portfolio">
+                <h6 class="my-text-color-2">Portfolio</h6>
+              </a>
+              <a href="#" class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://a-ravitz.github.io/word-guess-game/">Word Guess Game</a>
+                <a class="dropdown-item" href="https://a-ravitz.github.io/unit-4-game/index.html">Crystal Collector</a>
+                <a class="dropdown-item" href="https://a-ravitz.github.io/trivia-game/index.html">Star Trek Trivia</a>
+                <a class="dropdown-item" href="https://a-ravitz.github.io/gifTastic/">Simpsons Gif Search</a>
+                <a class="dropdown-item" href="https://a-ravitz.github.io/TrainScheduler">Train Scheduler</a>
+                <a class="dropdown-item" href="https://a-ravitz.github.io/drums">Keyboard Drums</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link slideSection" href="#contact">
+              <h6 class="my-text-color-3">Contact</h6>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container-fluid" id="about">
+    <!-- <div id="#item1" class="container-fluid"> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jumbotron bg-white">
+            <br><br><br><br>
+            <div class="h2">About Me</div>
+            <hr>
+            <img src="assets/images/bassshot.png" width="220" height="300" class="rounded float-left px-2">
+            <p>In 2005 I moved to Philadelphia to study music at University of The Arts. During my time in school, and
+              since, I've have had the opportunity to play hundred's of shows in Philly, and in many great bands, but my
+              most note worthy musical accomplishment has been touring with one of my grandpa's favorite bands, the
+              Glenn
+              Miller Orchestra.</p>
+                <br>
+                <p>When I stopped touring with the GMO in 2011, I began working in bars. I've had every job imaginable,
+                  from barbacking and cleaning up puke at SPTR, to managing the team, creating drinks, and bartending
+                  along side some of the city's best bartenders at Franklin Mortgage and Investment, Co. In 2016 I took
+                  another step deeper into the booze business by becoming a brand ambassador for Louisville Distilling,
+                  Co., representing Angel's Envy Bourbon. </p>
+                <br>
+                <p>Now, when i'm not working, playing bass, cooking, or riding my bike, i'm trying my hardest to wrap my
+                  head around coding for my PennLPS/Trilogy fullstack web development bootcamp classes!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jumbotron bg-white">
+            <br><br><br><br>
+            <div class="h2">Portfolio</div>
+            <hr>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card text-white mb-1">
+                  <img class="card-img img-fluid" style="height: 329px;" src="assets/images/b165a3.png" alt="oy vey">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title font-weight-light">
+                      <span class="t1">P</span><span class="t2">U</span><span class="t3">R</span><span
+                        class="t4">P</span><span class="t5">L</span><span class="t6">E</span></h5>
+                    <p class="card-text">Try to guess the shade in the background before you run out of guesses</p>
+                  </div>
+                  <div class="card-body">
+                    <a href="https://a-ravitz.github.io/word-guess-game/" class="card-link text-secondary">Word Guess
+                      Game</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card text-black mb-1">
+                  <img class="card-img-top img-fluid" style="height: 329px;" src="assets/images/quartz.jpg"
+                    alt="Capital?">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title my-text-color-1">Crystal Collector</h5>
+                    <p class="card-text font-weight-bold t4">Guess the number by clicking the crystals</p>
+                  </div>
+                  <div class="card-body">
+                    <a href="https://a-ravitz.github.io/unit-4-game/index.html" class="card-link text-secondary">Crystal
+                      Collector</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-1">
+                <div class="card text-black mb-1">
+                  <img class="card-img-top img-fluid" style="height: 329px;" src="assets/images/startrek.jpg"
+                    alt="Do you see cows?">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Star Trek Trivia</h5>
+                    <p class="card-text justify-bottom font-weight-bold text-black">Test your knowledge</p>
+                  </div>
+                  <div class="card-body">
+                    <a href="https://a-ravitz.github.io/trivia-game/index.html" class="card-link text-secondary">Star
+                      Trek Trivia</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card text-white mb-1">
+                  <img class="card-img img-fluid" style="height: 329px" src="assets/images/simpsons.jpg" alt="spicy!">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Simpsons Gif</h5>
+                    <p class="card-text">Search for any simpsons gif you'd like! </p>
+                  </div>
+                  <div class="card-body">
+                    <a href="https://a-ravitz.github.io/gifTastic/" class="card-link text-secondary">GifTastic</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card text-white mb-1 height:300px">
+                  <img class="card-img-top img-fluid" style="height: 329px;" src="assets/images/train.jpg"
+                    alt="Alaska?">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title black">Train Scheduler</h5>
+                    <p class="card-text blue">A dynamically updating app that allows you schedule fake trains and keep
+                      track up to the minute </p>
+                  </div>
+                  <div class="card-body">
+                    <a href="https://a-ravitz.github.io/TrainScheduler" class="card-link text-secondary">Train
+                      Scheduler</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card text-white mb-1 height:300px">
+                  <img class="card-img-top img-fluid" style="height: 329px;" src="assets/images/space.jpeg"
+                    alt="Alaska?">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-white">Drum Kit</h5>
+                    <p class="card-text blue">A drumkit that you play with your keyboard</p>
+                  </div>
+                  <div class="card-body">
+                    <a href="https://a-ravitz.github.io/drums" class="card-link text-secondary">Drum Kit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="contact">
+    
+    <div class="row">
+      <div class="col-md-12 icons">
+        <hr>
+        <div class="jumbotron bg-white d-flex justify-content-center">
+          <a href="mailto:adam.ravitz@gmail.com"><img src="assets/images/icons/gmail-icon.png" class="m-3"
+              style="width:70px;height:70px;"></a>
+          <a href="https://www.instagram.com/schmavitz/"><img src="assets/images/icons/iconmonstr-instagram-11-240.png"
+              class="m-3" style="width:70px;height:70px;"></a>
+          <a href="https://www.linkedin.com/in/adam-ravitz/"><img src="assets/images/icons/linkedin-icon.png"
+              class="m-3" style="width:70px;height:70px;"></a>
+          <a href="https://github.com/a-ravitz"><img src="assets/images/icons/github-icon.png" class="m-3"
+              style="width:70px;height:70px;"></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.3/jquery.scrollTo.min.js"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
 </html>

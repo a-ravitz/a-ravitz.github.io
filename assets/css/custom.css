@@ -66,3 +66,9 @@ hr {
 .btn-group {
     border: none;
 }
+#item2 {
+    background-color: #95c4ce;
+}
+body {
+    position: relative;
+}
