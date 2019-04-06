@@ -23,7 +23,7 @@ $(document).ready(function () {
   $(function () {
 
     // Get the form.
-    var form = $('#ajaxcontact');
+    var form = $('#ajax-contact');
 
     // Get the messages div.
     var formMessages = $('#form-messages');
