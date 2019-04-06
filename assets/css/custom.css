@@ -59,9 +59,9 @@ hr {
 .blue {
     color: #6dd5e9;
 }
-.btn {
+/* .btn {
     border: none;
-}
+} */
 
 .btn-group {
     border: none;
@@ -71,4 +71,7 @@ hr {
 }
 body {
     position: relative;
+}
+.round {
+    border-radius: 15%
 }

@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="/homework/bootstrap-portfolio/assets/css/reset.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/custom.css">
@@ -16,14 +15,13 @@
 
 <body>
   <div class="container fixed-top">
-    <nav class="navbar navbar-expand-lg bg-white ">
-      <a class="navbar-brand slideSection" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+      <a class="navbar-brand" href="#">
         <h1 class="font-weight-light"><span class="my-text-color-1">A</span><span class="my-text-color-2">d</span><span
             class="my-text-color-3">a</span><span class="my-text-color-4">m</span> <span
             class="my-text-color-2">R</span><span class="my-text-color-1">a</span><span
             class="my-text-color-5">v</span><span class="my-text-color-4">i</span><span
-            class="my-text-color-3">t</span><span class="my-text-color-2">z</span></h1>
-      </a>
+          class="my-text-color-3">t</span><span class="my-text-color-2">z</span></h1></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,17 +29,14 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active ml-auto">
-            <a class="nav-link slideSection" href="#about">
-              <h6 class="my-text-color-1">About</h6>
-            </a>
+            <a class="nav-link slideSection" href="#about"><h6 class="my-text-color-1">About</h6></a>
           </li>
-          <!-- dropdown menu for portfolio items -->
           <li class="nav-item ml-auto">
             <div class="btn-group">
               <a class="nav-link slideSection" href="#portfolio">
                 <h6 class="my-text-color-2">Portfolio</h6>
-              </a>
-              <a href="#" class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+              </a>  
+              <a href="#" class="nav-link dropdown-toggle dropdown-toggle-split dropper" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
               </a>
@@ -56,41 +51,51 @@
             </div>
           </li>
           <li class="nav-item ml-auto">
-            <a class="nav-link slideSection" href="#contact">
-              <h6 class="my-text-color-3">Contact</h6>
-            </a>
+            <a class="nav-link slideSection" href="#contact"><h6 class="my-text-color-3">Contact</h6></a>
           </li>
 
         </ul>
       </div>
     </nav>
   </div>
-  <div class="container-fluid" id="about">
+  <div class="container" id="about">
     <!-- <div id="#item1" class="container-fluid"> -->
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <!-- <div class="col-md-12"> -->
           <div class="jumbotron bg-white">
             <br><br><br><br>
             <div class="h2">About Me</div>
             <hr>
-            <img src="assets/images/bassshot.png" width="220" height="300" class="rounded float-left px-2">
+            <div class="col-md-3 float-left">
+            <img src="assets/images/bassshot.png" width="220" height="300" class="round float-left px-2">
+            <br>
+            <a href="mailto:adam.ravitz@gmail.com"><img src="assets/images/icons/gmail-icon.png" class="m-3"
+              style="width:20px;height:20px;"></a>
+          <a href="https://www.instagram.com/schmavitz/"><img src="assets/images/icons/iconmonstr-instagram-11-240.png"
+              class="m-3" style="width:20px;height:20px;"></a>
+          <a href="https://www.linkedin.com/in/adam-ravitz/"><img src="assets/images/icons/linkedin-icon.png"
+              class="m-3" style="width:20px;height:20px;"></a>
+          <a href="https://github.com/a-ravitz"><img src="assets/images/icons/github-icon.png" class="m-3"
+              style="width:20px;height:20px;"></a>
+            </div>
+            <div class="col-md-9 float-left">
             <p>In 2005 I moved to Philadelphia to study music at University of The Arts. During my time in school, and
               since, I've have had the opportunity to play hundred's of shows in Philly, and in many great bands, but my
               most note worthy musical accomplishment has been touring with one of my grandpa's favorite bands, the
               Glenn
               Miller Orchestra.</p>
-                <br>
-                <p>When I stopped touring with the GMO in 2011, I began working in bars. I've had every job imaginable,
-                  from barbacking and cleaning up puke at SPTR, to managing the team, creating drinks, and bartending
-                  along side some of the city's best bartenders at Franklin Mortgage and Investment, Co. In 2016 I took
-                  another step deeper into the booze business by becoming a brand ambassador for Louisville Distilling,
-                  Co., representing Angel's Envy Bourbon. </p>
-                <br>
-                <p>Now, when i'm not working, playing bass, cooking, or riding my bike, i'm trying my hardest to wrap my
-                  head around coding for my PennLPS/Trilogy fullstack web development bootcamp classes!</p>
+            <br>
+            <p>When I stopped touring with the GMO in 2011, I began working in bars. I've had every job imaginable,
+              from barbacking and cleaning up puke at SPTR, to managing the team, creating drinks, and bartending
+              along side some of the city's best bartenders at Franklin Mortgage and Investment, Co. In 2016 I took
+              another step deeper into the booze business by becoming a brand ambassador for Louisville Distilling,
+              Co., representing Angel's Envy Bourbon. </p>
+            <br>
+            <p>Now, when i'm not working, playing bass, cooking, or riding my bike, i'm trying my hardest to wrap my
+              head around coding for my PennLPS/Trilogy fullstack web development bootcamp classes!</p>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>
@@ -199,17 +204,39 @@
     
     <div class="row">
       <div class="col-md-12 icons">
+          <div class="h2">Contact</div>
         <hr>
-        <div class="jumbotron bg-white d-flex justify-content-center">
-          <a href="mailto:adam.ravitz@gmail.com"><img src="assets/images/icons/gmail-icon.png" class="m-3"
+        <!-- <div class="jumbotron bg-white d-flex justify-content-center"> -->
+          <!-- <a href="mailto:adam.ravitz@gmail.com"><img src="assets/images/icons/gmail-icon.png" class="m-3"
               style="width:70px;height:70px;"></a>
           <a href="https://www.instagram.com/schmavitz/"><img src="assets/images/icons/iconmonstr-instagram-11-240.png"
               class="m-3" style="width:70px;height:70px;"></a>
           <a href="https://www.linkedin.com/in/adam-ravitz/"><img src="assets/images/icons/linkedin-icon.png"
               class="m-3" style="width:70px;height:70px;"></a>
           <a href="https://github.com/a-ravitz"><img src="assets/images/icons/github-icon.png" class="m-3"
-              style="width:70px;height:70px;"></a>
-
+              style="width:70px;height:70px;"></a> -->
+              <form id="form">
+                  <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input name="name" type="name" class="form-control" id="contactName" placeholder="John Smith">
+                  </div>
+                  <div class="form-group">
+                      <label for="Email">Email address</label>
+                      <input name="email" type="email" class="form-control" id="contactEmail" placeholder="example@gmail.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" class="form-control" id="contactMessage" rows="3"></textarea>
+                    <small id="messagesuggestion" class="form-text text-muted">
+                        <p class ="my-text-color-4">Please feel free to write whatever you'd like here.</p>
+                      </small>
+                      
+                  </div>
+                  <div class="col-auto my-1">
+                      <button type="submit" class="btn btn-outline my-text-color-5">Submit</button>
+                    </div>
+                </form>
+                <br><br><br><br>
         </div>
       </div>
     </div>
@@ -217,9 +244,6 @@
   </div>
 
 </body>
-
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.3/jquery.scrollTo.min.js"></script> -->
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
   integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
