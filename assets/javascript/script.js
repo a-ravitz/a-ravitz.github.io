@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: 'POST',
-      url: "./php/sendmail.php",
+      url: "sendmail.php",
       data: {
         Name: $("#name").val(),
         Email: $("#email").val(),
