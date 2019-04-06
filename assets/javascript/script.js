@@ -24,9 +24,10 @@ $(document).ready(function () {
     event.preventDefault();
     var form_status = $('<div class="form_status"></div>');
     var $form = $(this);
+
     $.ajax({
       type: 'POST',
-      url: "../php/sendmail.php",
+      url: "./php/sendmail.php",
       data: {
         Name: $("#name").val(),
         Email: $("#email").val(),
