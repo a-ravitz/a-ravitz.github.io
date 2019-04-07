@@ -68,7 +68,7 @@ hr {
     background-color: #95c4ce;
 }
 body {
-    position: relative;
+    /* position: relative; */
 }
 .round {
     border-radius: 15%
