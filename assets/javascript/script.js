@@ -14,14 +14,8 @@ $(document).ready(function () {
     e.preventDefault();
   })
 
-var time = 
 
-$(".submitBtn").on("click", function(e) {
-  alert("We're so sorry for the inconvenience, this button will be functional soon!")
-})
 });
-
-
 
 
   // const secondHand = document.querySelector('.second-hand');

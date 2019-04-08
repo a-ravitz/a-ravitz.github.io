@@ -73,6 +73,12 @@ body {
 .round {
     border-radius: 15%
 }
+
+@media (max-width: 994px) {
+    .dropdown-toggle-split {
+        display: none;
+    }
+ }
 /* .clock {
     width: 5px;
     height: 5px;
