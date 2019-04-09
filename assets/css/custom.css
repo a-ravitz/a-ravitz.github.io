@@ -1,3 +1,12 @@
+html, body {
+    font-family: 'Arimo', sans-serif;
+
+
+}
+h1 {
+    font-size: 40px;
+    font-weight: lighter;
+}
 .my-text-color-1 {
     color: #7cb386;
 }
@@ -90,7 +99,7 @@ body {
     /* border: 10px; */
     border-radius: 50%;
     /* top: 0px; */
-    margin: 7px;
+    margin: 13px;
     /* clip-path: circle(50% at 50% 50%); */
 }
 .circle-container a {
@@ -125,16 +134,23 @@ body {
 .form-control {
     background-color: #f7f7f7
 }
+.fixed-top {
+    width: 100%
+}
 .navbar {
     position: absolute !important;
     top: 0px;
     width: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding: 30px;
+    margin-right: 250px;
+    
 }
 @media (max-width: 994px) {
     .dropdown-toggle-split {
         display: none;
+    }
+    .navbar {
+        width: 100%;
     }
  }
 
