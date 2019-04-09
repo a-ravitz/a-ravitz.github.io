@@ -17,7 +17,7 @@
     background-color: rgba(232,233,219,0.2);
 }
 .my-bg-color-2 {
-    background-color: #f7f7f7;
+    background-color: #f7f3f3;
 }
 .btn {
     border-color: #7cb386;
@@ -69,6 +69,7 @@ hr {
 }
 body {
     line-height: 27px;
+    background-color: #f7f3f3
 }
 .round {
     border-radius: 15%
@@ -100,7 +101,7 @@ body {
     /* clip-path: ellipse(44% 50% at 50% 50%); */
     margin: -2.1em;
 }
-.circle-container img { display: block; width: 85%; }
+/* .circle-container img { display: block; width: 85%; } */
 .deg120 { transform: rotate(115deg) translate(155px) rotate(-115deg); }
 .deg180 { transform: rotate(155deg) translate(120px) rotate(-155deg) }
 .deg225 { transform: rotate(205deg) translate(120px) rotate(-205deg); }
@@ -111,18 +112,20 @@ body {
     top: 0px;
     right: 5%;
     height: 300px;
-    width: 230px;
+    width: 235px;
 }
 .ellipse {
     clip-path: ellipse(45% 50% at 48% 50%);
 }
-
+.dropdown-menu {
+    background-color: #f7f7f7;
+}
+.form-control {
+    background-color: #f7f7f7
+}
 @media (max-width: 994px) {
     .dropdown-toggle-split {
         display: none;
-    }
-    ul {
-        background-color: transparent;
     }
  }
 
