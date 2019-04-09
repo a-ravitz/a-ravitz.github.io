@@ -113,10 +113,10 @@ body {
     margin: -2.1em;
 }
 .circle-container img { display: block; width: 100%; }
-.deg120 { transform: rotate(100deg) translate(175px) rotate(-100deg); }
-.deg180 { transform: rotate(145deg) translate(175px) rotate(-145deg) }
-.deg225 { transform: rotate(190deg) translate(175px) rotate(-190deg); }
-.deg270 { transform: rotate(235deg) translate(175px) rotate(-235deg); }
+.deg100 { transform: rotate(100deg) translate(175px) rotate(-100deg) scale(1); }
+.deg145 { transform: rotate(145deg) translate(175px) rotate(-145deg); }
+.deg190 { transform: rotate(190deg) translate(175px) rotate(-190deg); }
+.deg235 { transform: rotate(235deg) translate(175px) rotate(-235deg); }
 .center {
     position: absolute;
     /* align-content: center;   */
@@ -128,6 +128,9 @@ body {
 .ellipse {
     -webkit-clip-path: circle(39.2% at 50% 39%);
 }
+/* .zoom:hover {
+    -webkit-transform: scale(3);
+}*/
 .dropdown-menu {
     background-color: #f7f7f7;
 }
