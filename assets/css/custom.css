@@ -126,7 +126,7 @@ body {
     width: 205px;
 }
 .ellipse {
-    clip-path: circle(39.2% at 50% 39%);
+    -webkit-clip-path: circle(39.2% at 50% 39%);
 }
 .dropdown-menu {
     background-color: #f7f7f7;
