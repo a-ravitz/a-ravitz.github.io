@@ -111,8 +111,8 @@ body {
 .center {
     position: absolute;
     /* align-content: center;   */
-    top: -25.4px;
-    right: -0.3px;
+    top: -25.45px;
+    right: 0.089px;
     height: 465px;
     width: 205px;
 }
