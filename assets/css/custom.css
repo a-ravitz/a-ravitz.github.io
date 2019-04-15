@@ -148,6 +148,12 @@ body {
     margin-right: 250px;
     
 }
+@media (max-width: 1220 px) {
+    .deg100 { transform: rotate(130deg) translate(175px) rotate(-130deg); }
+    .deg145 { transform: rotate(175deg) translate(175px) rotate(-175deg); }
+    .deg190 { transform: rotate(220deg) translate(175px) rotate(-220deg); }
+    .deg235 { transform: rotate(265deg) translate(175px) rotate(-265deg); }
+}
 @media (max-width: 994px) {
     .dropdown-toggle-split {
         display: none;

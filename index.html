@@ -51,6 +51,7 @@
                 <a class="dropdown-item" href="https://a-ravitz.github.io/gifTastic/">Simpsons Gif Search</a>
                 <a class="dropdown-item" href="https://a-ravitz.github.io/TrainScheduler">Train Scheduler</a>
                 <a class="dropdown-item" href="https://a-ravitz.github.io/drums">Keyboard Drums</a>
+                <a class="dropdown-item" href="https://github.com/a-ravitz/liri-node-app">Liri.js</a>
               </div>
             </div>
           </li>
@@ -75,9 +76,8 @@
             <img src="assets/images/bassshot.png" class="center ellipse">
             <a href="mailto:adam.ravitz@gmail.com"><img src="assets/images/icons/gmail-icon.png" class="deg235 zoom"
                 style="width:20px;height:20px;"></a>
-            <a href="https://www.instagram.com/schmavitz/"><img
-                src="assets/images/icons/insta-icon.png" class="deg190 zoom"
-                style="width:20px;height:20px;"></a>
+            <a href="https://www.instagram.com/schmavitz/"><img src="assets/images/icons/insta-icon.png"
+                class="deg190 zoom" style="width:20px;height:20px;"></a>
             <a href="https://github.com/a-ravitz"><img src="assets/images/icons/github-icon.png" class="deg145 zoom"
                 style="width:20px;height:20px;"></a>
             <a href="https://www.linkedin.com/in/adam-ravitz/"><img src="assets/images/icons/linkedin-icon.png"
@@ -94,16 +94,16 @@
             Co., representing Angel's Envy Bourbon. </p><br>
           <p>When i'm not working, playing bass, cooking, or riding my bike, i'm trying to wrap my
             head around the assignments for this PennLPS/Trilogy fullstack web development bootcamp. </p>
-            
+
           <!-- </div> -->
-        <!-- </div> -->
+          <!-- </div> -->
+        </div>
       </div>
-    </div>
-    <div class="container" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <!-- <div class="jumbotron bg-white"> -->
+      <div class="container" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- <div class="jumbotron bg-white"> -->
               <br><br><br><br><br><br>
               <div class="h2">Portfolio</div>
               <hr>
@@ -114,7 +114,7 @@
                     <div class="card-img-overlay">
                       <h5 class="card-title">
                         <span class="t1">P</span><span class="t2">U</span><span class="t3">R</span><span
-                          class="t4">P</span><span class="t5">L</span><span class="t6">E</span></h5>
+                          class="t4">P</span><span class="t5">L</span><span class="t6">E</span></h5><br><br><br><br>
                       <p class="card-text">Try to guess the shade in the background before you run out of guesses</p>
                     </div>
                     <div class="card-body">
@@ -187,7 +187,7 @@
                     <img class="card-img-top img-fluid" style="height: 329px;" src="assets/images/space.jpeg"
                       alt="Alaska?">
                     <div class="card-img-overlay">
-                      <h5 class="card-title text-white">Drum Kit</h5>
+                      <h5 class="card-title text-white">Drum Kit</h5><br><br><br>
                       <p class="card-text blue">A drumkit that you play with your keyboard</p>
                     </div>
                     <div class="card-body">
@@ -197,48 +197,61 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white mb-1">
+                <img class="card-img img-fluid" style="height: 329px" src="assets/images/node_liri.png" alt="spicy!">
+                <div class="card-img-overlay">
+                  <h5 class="card-title text-white"></h5><br><br><br><br><br><br>
+                  <p class="card-text text-white">Search Spotify for song information, IMDB for movie information, or Bands In Town for concert information  </p>
+                </div>
+                <div class="card-body">
+                  <a href="https://github.com/a-ravitz/liri-node-app" class="card-link text-secondary">Liri</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container" id="contact">
+
+            <div class="row">
+
+              <div class="col-md-12 icons">
+                <!-- <div class="jumbotron bg-white"> -->
+                <br><br><br><br><br><br>
+                <div class="h2">Contact Me</div>
+                <hr><br><br>
+                <div id="messages"></div>
+                <form id="contact-form" role="form" action="https://formspree.io/adam.ravitz@gmail.com" method="POST">
+
+                  <div class="field">
+                    <label for="Name">Name</label>
+                    <input name="name" type="name" class="form-control" id="form-name" placeholder="John Smith">
+                  </div><br>
+                  <div class="field">
+                    <label for="Email">Email address</label>
+                    <input name="email" type="email" class="form-control" id="form-email"
+                      placeholder="example@gmail.com">
+                  </div><br>
+                  <div class="field">
+                    <label for="message">Message</label>
+                    <input name="message" class="form-control" id="form-message" rows="3"></input>
+                    <small id="messagesuggestion" class="form-text text-muted">
+                      <p class="my-text-color-4">Please feel free to write whatever you'd like here.</p>
+                    </small>
+
+                  </div>
+                  <div class="field col-auto my-1">
+                    <button type="submit" class="btn submitBtn btn-outline my-text-color-5"
+                      value="Submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
           <!-- </div> -->
         </div>
-      </div>
-    </div>
-    <div class="container" id="contact">
-      
-      <div class="row">
-        
-        <div class="col-md-12 icons">
-            <!-- <div class="jumbotron bg-white"> -->
-              <br><br><br><br><br><br>
-          <div class="h2">Contact Me</div>
-          <hr><br><br>
-          <div id="messages"></div>
-          <form id="contact-form" role="form" action="https://formspree.io/adam.ravitz@gmail.com" method="POST">
-
-            <div class="field">
-              <label for="Name">Name</label>
-              <input name="name" type="name" class="form-control" id="form-name" placeholder="John Smith">
-            </div><br>
-            <div class="field">
-              <label for="Email">Email address</label>
-              <input name="email" type="email" class="form-control" id="form-email" placeholder="example@gmail.com">
-            </div><br>
-            <div class="field">
-              <label for="message">Message</label>
-              <input name="message" class="form-control" id="form-message" rows="3"></input>
-              <small id="messagesuggestion" class="form-text text-muted">
-                <p class="my-text-color-4">Please feel free to write whatever you'd like here.</p>
-              </small>
-
-            </div>
-            <div class="field col-auto my-1">
-              <button type="submit" class="btn submitBtn btn-outline my-text-color-5" value="Submit">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- </div> -->
-  </div>
-  <br><br>
+        <br><br>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -249,4 +262,5 @@
 <script type="text/javascript" src="assets/javascript/script.js"></script>
 
 <br>
+
 </html>
