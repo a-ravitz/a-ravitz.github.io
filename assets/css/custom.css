@@ -127,6 +127,8 @@ body {
 }
 .ellipse {
     -webkit-clip-path: circle(39.2% at 50% 39%);
+    clip-path: circle(39.2% at 50% 39%);
+  
 }
 /* .zoom:hover {
     -webkit-transform: scale(3);
