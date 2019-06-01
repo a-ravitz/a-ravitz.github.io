@@ -116,6 +116,7 @@ body {
     font-weight: bolder;
     color: slategrey;
 } 
+.deg55 { transform: rotate(280deg) translate(175px) rotate(-280deg); }
 .deg100 { transform: rotate(100deg) translate(175px) rotate(-100deg); }
 .deg145 { transform: rotate(145deg) translate(175px) rotate(-145deg); }
 .deg190 { transform: rotate(190deg) translate(175px) rotate(-190deg); }
@@ -143,12 +144,13 @@ body {
     margin-right: 250px;
     
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
+    .deg55 {transform: rotate(85deg) translate(170px) rotate(-85deg)}
     .deg100 { transform: rotate(130deg) translate(175px) rotate(-130deg); }
     .deg145 { transform: rotate(175deg) translate(175px) rotate(-175deg); }
     .deg190 { transform: rotate(220deg) translate(175px) rotate(-220deg); }
     .deg235 { transform: rotate(265deg) translate(175px) rotate(-265deg); }
-}
+} */
 @media (max-width: 994px) {
     .dropdown-toggle-split {
         display: none;
@@ -156,6 +158,9 @@ body {
     .navbar {
         width: 100%;
     }
+    .icons a::before {
+        content: "\A";
+      }
  }
 
 /* .clock {
