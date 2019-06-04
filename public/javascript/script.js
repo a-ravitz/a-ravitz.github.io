@@ -51,9 +51,9 @@ function clickOutside(e) { //function to close modal if outside click
     }
 };
 
-function recaptchaCallback() {
-  $('#submitBtn').removeAttr('disabled');
-};
+// function recaptchaCallback() {
+//   $('#submitBtn').removeAttr('disabled');
+// };
 
 });
 
