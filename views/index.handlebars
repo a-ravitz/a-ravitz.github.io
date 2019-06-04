@@ -240,18 +240,31 @@
 </div> 
 <div class="container" id="contact">
 
+
+
+
+
     <div class="row">
 
         <div class="col-md-12 icons">
+            
             <br><br><br><br><br><br>
             <div class="h2">Contact Me</div>
             <hr><br>
+
+            <div id="simpleModal" class="modal">
+                <div class="modal-content">
+                    <div class="float-right"><span class="closeBtn">&times;</span></div>
+                    <div class="text"></div>
+                </div>
+            </div>
+
             <div id="messages"></div>
             <form id="contactForm" action="/send-email" method="POST">
 
                 <div class="field">
                     <label for="name">Name</label>
-                    <input name="name" type="name" class="form-control" id="form-name" placeholder="John Smith">
+                    <input name="name" type="name" class="form-control formName" id="formName" placeholder="John Smith">
                 </div><br>
                 <div class="field">
                     <label for="email">Email address</label>
@@ -283,9 +296,12 @@
                         <a href="./Adam Ravitz Resume.pdf"><img src="images/icons/resume-icon.png" 
                                 style="width:20px;height:20px;"></a>
                         </div>
+                        
+
                 </div>
         </div>
         </form>
     </div>
 </div> 
 </div> 
+                

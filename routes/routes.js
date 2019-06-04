@@ -1,3 +1,5 @@
+var nodeMailer = require('nodemailer');
+
 module.exports = function(app) {
 
 app.get('/', function (req, res) {
@@ -29,7 +31,7 @@ transporter.sendMail(mailOptions, function(error, info) {
         console.log(error);
     } else {
         console.log('Email sent: ' + info.response);
-        res.redirect('/');
+        // res.redirect('/');
 
     }
 });

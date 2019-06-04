@@ -14,6 +14,44 @@ $(document).ready(function () {
     e.preventDefault();
   })
 
+
+  var modal = $("#simpleModal")
+  var submitBtn = $("#submitBtn")
+  var closeBtn = $('.closeBtn');
+  var name = $("#formName").val()
+
+  $(submitBtn).on("click", openModal);
+  $(closeBtn).on("click", closeModal);
+  $(window).on("click", clickOutside);
+
+
+  function openModal() {
+    $('#simpleModal').fadeIn();
+    var name = $("#formName").val()
+    console.log("name is: " + name)
+    $("#simpleModal").css("display", "block")
+    $(".text").append(`Thanks for the message, ${name}!`)
+    
+
+};
+
+function closeModal() {
+
+  // $("#simpleModal").css("display", "none")
+  location.replace("/")
+};
+
+function clickOutside(e) { //function to close modal if outside click 
+    console.log("hi")
+    console.log("modal: " + modal[modal])
+    if (e.target === modal[modal]) {
+      location.replace("/") 
+        // console.log(e)
+        // $("#simpleModal").css("display", "none")
+    }
+};
+
+
 });
 
 
