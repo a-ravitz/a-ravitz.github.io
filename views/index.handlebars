@@ -255,25 +255,25 @@
             <div id="simpleModal" class="modal">
                 <div class="modal-content">
                     <div class="float-right"><span class="closeBtn">&times;</span></div>
-                    <div class="text"></div>
+                    <p>Thanks for the message, <span class="textName"></span></p>
                 </div>
             </div>
 
             <div id="messages"></div>
-            <form id="contactForm" action="/send-email" method="POST">
+            <form name="contactForm" id="contactForm" action="/send-email" method="POST">
 
                 <div class="field">
                     <label for="name">Name</label>
-                    <input name="name" type="name" class="form-control formName" id="formName" placeholder="John Smith">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="John Smith">
                 </div><br>
                 <div class="field">
                     <label for="email">Email address</label>
-                    <input name="email" type="email" class="form-control" id="form-email"
+                    <input name="email" type="email" class="form-control" id="email"
                         placeholder="example@gmail.com">
                 </div><br>
                 <div class="field">
                     <label for="message">Message</label>
-                    <input name="message" class="form-control" id="form-message" rows="3"></input>
+                    <input name="message" class="form-control" id="message" rows="3"></input>
                     <small id="messagesuggestion" class="form-text text-muted">
                         <p class="my-text-color-4">Please feel free to write whatever you'd like here.</p>
                     </small>
@@ -283,7 +283,7 @@
                     <div class="field col-md-6 my-1">
                         {{!-- <div class="d-flex justify-content-around"> --}}
                         <button type="submit" class="btn submitBtn btn-outline my-text-color-5"
-                            value="Submit" id="submitBtn">Submit</button>
+                            value="Submit" id="submitBtn" >Submit</button>
                             {{!-- <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdgJqcUAAAAAP0SeA_6-LpER7QSxreZ9oC6Q4uA"></div> --}}
                         </div>
                     {{!-- </div> --}}

@@ -27,6 +27,9 @@ h1 {
 .my-bg-color-2 {
     background-color: #f7f3f3;
 }
+.my-bg {
+    background-color: transparent;
+}
 .btn {
     border-color: #7cb386;
 }
@@ -80,8 +83,8 @@ body {
 .round {
     border-radius: 15%
 }
-#form-message {
-    height: 120px;
+#message {
+    height: 80px;
 }
 .circle-container {
     position: relative;
@@ -158,17 +161,17 @@ body {
  }
 
 .modal{
-    display: none;
+    /* display: none; */
     position: fixed;
     z-index:    1;
     left: 0; top: 0;
-    height: 80%;
+    height: 100%;
     width: 100%;
     /* enable the scroll bar if needed */
     overflow: auto; 
-    background-color: rgba(0,0,0,0.5)
+    /* background: rgb(2,0,36); */
+    background: linear-gradient(90deg, rgba(255,255,255,0.9037990196078431) 0%, rgba(196,195,195,0.9) 10%, rgba(184,184,184,0.9) 20%, rgba(171,171,171,0.9) 30%, rgba(136,136,136,0.9) 40%, rgba(126,126,126,0.9) 47%, rgba(87,87,87,0.9) 60%, rgba(126,126,126,1) 73%, rgba(136,136,136,1) 83%, rgba(171,171,171,1) 93%, rgba(184,184,184,1) 100%);
 }
-
 .modal-content {
     background-color: #f4f4f4;
     margin: 20% auto;
@@ -176,7 +179,6 @@ body {
     width: 70%;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(148, 119, 255, 0.2);
 }
-
 .closeBtn {
     color: #ccc;
     float: right;
@@ -189,11 +191,11 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
-
 .submitBtn {
     height: 35px;
     text-align: center
 }
+
 /* .clock {
     width: 5px;
     height: 5px;

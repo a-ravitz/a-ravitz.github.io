@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  console.log("loaded")
 
+  //animation when clicking on links
   $('.slideSection').click(function (e) {
 
     var linkHref = $(this).attr('href');
@@ -15,40 +15,90 @@ $(document).ready(function () {
   })
 
 
+
+  //modal and form validation stuff
   var modal = $("#simpleModal")
   var submitBtn = $("#submitBtn")
   var closeBtn = $('.closeBtn');
-  var name = $("#formName").val()
+  var colorArr = ["my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2"]
+  var contactForm = $("#contactForm")
 
-  $(submitBtn).on("click", openModal);
+  //form validation
+  $(function() {
+    // Initialize form validation on the registration form.
+    // It has the name attribute "registration"
+    $(contactForm).validate({
+      // Specify validation rules
+      errorClass: colorArr[0],
+      rules: {
+        // The key name on the left side is the name attribute
+        // of an input field. Validation rules are defined
+        // on the right side
+        name: "required",
+        email: {
+          required: true,
+          // Specify that email should be validated
+          // by the built-in "email" rule
+          email: true
+        },
+        message: "required",
+      },
+      // Specify validation error messages
+      messages: {
+        name: "Please enter your name",
+        email: "Please enter a valid email address",
+        message: "Please include a message"
+      },
+      // Make sure the form is submitted to the destination defined
+      // in the "action" attribute of the form when valid
+      submitHandler: function(form) {
+        form.submit();
+        openModal()
+      }
+    });
+  });
+
   $(closeBtn).on("click", closeModal);
   $(window).on("click", clickOutside);
 
-
   function openModal() {
     $('#simpleModal').fadeIn();
-    var name = $("#formName").val()
-    console.log("name is: " + name)
-    $("#simpleModal").css("display", "block")
-    $(".text").append(`Thanks for the message, ${name}!`)
-    
 
-};
+    var name = $("#name").val();
+    var nameArr = []
+
+    for (var i = 0; i < name.length; i++) {
+      nameArr.push(name[i])
+    }
+
+    for (var j = 0; j < nameArr.length; j++) {
+    var name = $("<span>")
+    // for (var x = 0; x < colorArr.length; x++) {
+        name.addClass(colorArr[j])
+    
+        name.text(nameArr[j])
+      // }
+      $(".textName").append(name)
+   
+    }
+    console.log(name)
+    $(".text").append(name)
+    $("#simpleModal").css("display", "block")
+    $(".my-bg-color-2").css("background", "transparent")
+    }
 
 function closeModal() {
-
-  // $("#simpleModal").css("display", "none")
+  $(".my-bg-color-2").css("background", "#f7f3f3")
   location.replace("/")
 };
 
-function clickOutside(e) { //function to close modal if outside click 
+function clickOutside() { //function to close modal if outside click 
     console.log("hi")
-    console.log("modal: " + modal[modal])
-    if (e.target === modal[modal]) {
-      location.replace("/") 
-        // console.log(e)
-        // $("#simpleModal").css("display", "none")
-    }
+      $(modal).on("click", function(e){
+        if(e.target !== modal) {
+        location.replace("/")
+        }
+    })
 };
 
 // function recaptchaCallback() {
