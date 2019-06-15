@@ -14,17 +14,22 @@ $(document).ready(function () {
     e.preventDefault();
   })
 
+// $(".link").on("click", function() {
+//   // preventDefault()
+//   var thisLink = $(this).attr('data-link');
+//   console.log(thisLink)
+//   window.location.replace(thisLink)
+  
+// })
 
-
-  //modal and form validation stuff
+//modal and form validation variables
   var modal = $("#simpleModal")
-  var submitBtn = $("#submitBtn")
   var closeBtn = $('.closeBtn');
   var colorArr = ["my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2","my-text-color-1","my-text-color-2","my-text-color-3","my-text-color-4","my-text-color-5","my-text-color-2","my-text-color-1","my-text-color-5","my-text-color-4","my-text-color-3","my-text-color-2"]
   var contactForm = $("#contactForm")
 
   //form validation
-  $(function() {
+$(function() {
     // Initialize form validation on the registration form.
     // It has the name attribute "registration"
     $(contactForm).validate({
@@ -61,8 +66,9 @@ $(document).ready(function () {
   $(closeBtn).on("click", closeModal);
   $(window).on("click", clickOutside);
 
-  function openModal() {
-    $('#simpleModal').fadeIn();
+//function to open the the modal
+function openModal() {
+    $(modal).fadeIn();
 
     var name = $("#name").val();
     var nameArr = []
@@ -81,18 +87,19 @@ $(document).ready(function () {
       $(".textName").append(name)
    
     }
-    console.log(name)
     $(".text").append(name)
     $("#simpleModal").css("display", "block")
     $(".my-bg-color-2").css("background", "transparent")
     }
 
+//function to close the modal and reload the page
 function closeModal() {
   $(".my-bg-color-2").css("background", "#f7f3f3")
   location.replace("/")
 };
 
-function clickOutside() { //function to close modal if outside click 
+ //function to close modal if outside click
+function clickOutside() { 
     console.log("hi")
       $(modal).on("click", function(e){
         if(e.target !== modal) {
@@ -101,12 +108,12 @@ function clickOutside() { //function to close modal if outside click
     })
 };
 
+});
+
+
 // function recaptchaCallback() {
 //   $('#submitBtn').removeAttr('disabled');
 // };
-
-});
-
 
 
   // const secondHand = document.querySelector('.second-hand');
@@ -128,3 +135,4 @@ function clickOutside() { //function to close modal if outside click
 
   // setInterval(setDate, 1000)
 
+  
