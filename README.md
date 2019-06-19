@@ -19,7 +19,8 @@ and the user will be greeted with a modal that thanks them, and repeats their na
 
 at which point I will recieve an email that looks like this 
 
-<img width="325" alt="Screen Shot 2019-06-19 at 5 25 30 PM" src="https://user-images.githubusercontent.com/46004362/59802575-45d88900-92b7-11e9-9297-342ce3e206ab.png">
+<img width="556" alt="Screen Shot 2019-06-19 at 5 26 59 PM" src="https://user-images.githubusercontent.com/46004362/59802670-77e9eb00-92b7-11e9-9511-d67beb7dea7b.png">
+
 
 
 
