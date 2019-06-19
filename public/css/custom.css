@@ -444,3 +444,8 @@ body {
     right: 30px;
     font-size: 1px;
     } 
+
+    .text-secondary { transition: all .2s ease-in-out; }
+    .text-secondary:hover {
+        font-size: 22px;
+     }
