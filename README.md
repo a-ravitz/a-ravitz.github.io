@@ -11,7 +11,7 @@ if the field isn't filled out the site will urge you to fill it out inorder to s
 <img width="1147" alt="Screen Shot 2019-06-19 at 5 18 59 PM" src="https://user-images.githubusercontent.com/46004362/59801455-5dfbd880-92b6-11e9-9a09-1ef956271dbd.png">
 
 if you are sucessfully able to submit the form the `/send-email`route will be called 
-<img width="718" alt="Screen Shot 2019-06-19 at 5 09 37 PM" src="https://user-images.githubusercontent.com/46004362/59800852-a070e580-92b5-11e9-9e17-46340ef28f9e.png">
+<img width="518" alt="Screen Shot 2019-06-19 at 7 31 11 PM" src="https://user-images.githubusercontent.com/46004362/59808123-dec3d000-92c8-11e9-9a58-a987ec64e042.png">
 
 and the user will be greeted with a modal that thanks them, and repeats their name using the same colors found in the navbar
 
