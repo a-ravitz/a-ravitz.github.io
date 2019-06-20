@@ -109,6 +109,7 @@ body {
 }
 .center {
     justify-content: center;
+    justify-items: center;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
@@ -240,10 +241,10 @@ a:hover {
 }
 
 .blackground {
-    background-color: #242323;
+    background-color: #252526;
 }
 .blackground1 {
-    background-color: #1b1b1b;
+    background-color: #1E1E1E;
 }
 .blackground2 {
     background-color: #000000
@@ -251,10 +252,16 @@ a:hover {
 .whiteGround {
     background-color: white
 }
+.orangeground {
+    background-color: #F47F1F
+}
+.purpleground {
+    background-color: #B165A3
+}
 
 .fontA {
 Font-Family: 'Work Sans', Sans-Serif;
-Font-Size: 35px;
+Font-Size: 33px;
 }
 .fontB {
 Font-Family: 'Open Sans', Sans-Serif;
