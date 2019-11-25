@@ -16,7 +16,7 @@ module.exports = function(app) {
             secure: true, 
             auth: {
                 user: 'adam.ravitz.portfolio@gmail.com',
-                pass: 'R@v1tz87'
+                pass: ''
             }
     };
 
