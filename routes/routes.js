@@ -28,7 +28,7 @@ module.exports = function(app) {
         from: 'adam.ravitz.portfolio@gmail.com',
         to: 'adam.ravitz@gmail.com',
         subject:  `a message from your portfolio from ${req.body.name}`,
-        text: `${req.body.message} \nyou can respond to them at ${req.body.email}`
+        text: `${req.body.message} \n\nyou can respond to them at ${req.body.email}`
         };
 
     transporter.sendMail(mailOptions, function(error, info) {
