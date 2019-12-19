@@ -1,3 +1,5 @@
+var dotenv = require('dotenv')
+dotenv.config()
 var nodeMailer = require('nodemailer');
 
 module.exports = function(app) {
@@ -16,7 +18,7 @@ module.exports = function(app) {
             secure: true, 
             auth: {
                 user: 'adam.ravitz.portfolio@gmail.com',
-                pass: 'R@v1tz87'
+                pass: process.env.PORTFOLIO_PASS
             }
     };
 
